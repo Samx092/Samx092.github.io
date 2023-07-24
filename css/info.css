@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway';
+    line-height: 1.5em;
+}
+
+
+nav ul {
+    list-style: none;
+    overflow: hidden; 
+    background-color: #000000;
+}
+  
+nav ul li {
+    float:right;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #23a2ec;
+}
+
+.container {
+    background-color: #ffffff;
+    height: auto;
+    margin: 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    overflow: hidden;
+    width: 60%;
+    height: auto;
+    text-align: justify;
+}

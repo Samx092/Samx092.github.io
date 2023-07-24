@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+header.menu {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+  
+nav {
+    float: right;
+  }
+  
+nav ul {
+    list-style: none;
+    overflow: hidden; 
+}
+  
+nav ul li {
+    float: left;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #23a2ec;
+}
+
+menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 36px; 
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero {
+    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.5) 0%, rgba(166, 192, 238, 0.726) 100%), url(/images/portada.jpg);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-emphasis-color: #9e9ef1;
+    position: relative;
+    overflow: hidden;
+}
+
+.textos-hero {
+    height: 500px;
+    color: #fff;
+    text-shadow: 2px 2px #538ed1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textos-hero h1 {
+    font-size: 60px;
+}
+
+.textos-hero p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.textos-hero a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #538ed1;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.svg-hero {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Estilos generales*/
+
+.contenedor,
+.wave-contenedor,
+.cards.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+}
+.contenedor {
+    padding: 80px 0;
+}
+
+.titulo {
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo.left {
+    text-align: left;
+    color: #198acc;
+}
+
+
+.titulo.right {
+    text-align: right;
+}
+
+/* section */
+
+.wave-contenedor .website {
+    display:flex;
+    justify-content: space-between;
+    /* este codigo es para que queden los elementos, uno a la par de otro */
+}
+
+.wave-contenedor .website img {
+    width: 48%;
+}
+.website .contenedor-textos-main {
+    width: 40%;
+}
+
+.parrafo {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: inline-block;
+    text-decoration: none;
+    background-image:linear-gradient(45deg, #76bee0 0%, #76bee0 99%, #76bee0 100%);
+    padding: 12px 15px;
+    border-radius: 9px;
+    color: #fff;
+}
+
+/* info */
+
+.info {
+    background: rgb(88, 185, 223);
+    color: white;
+    text-align: center;
+}
+
+.info .contenedor .titulo.left {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* cards */
+
+.contenedor h2 {
+    text-transform: uppercase;
+}
+
+.contenedor .content-cards {
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(43, 99, 136, 0.5);
+    transform: scale(1);
+    transition: transform 0.6seg;
+}
+
+.card:hover {
+    box-shadow: 0 0 6px 0 rgba(79, 177, 216, 0.5);
+    transform:scale(1.03);
+    cursor: pointer;
+}
+
+.card i {
+    margin: 30px 0 20px 0;
+    color: #198acc;
+    font-size: 50px;
+}
+
+.card h3 {
+    text-transform: uppercase;
+}
+
+.card p {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* galeria */
+
+.galeria {
+    background: #f2f2f2;
+}
+
+.contenedor article .galeria-cont {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.galeria-cont>img {
+    width: 30%;
+    object-fit: cover;
+    height: 250px;
+    width: 330px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    overflow: hidden;
+} 
+
+.galeria-cont>img:hover {
+    transition: all 0.6s ease;
+    filter: brightness(50%)
+}
+
+.galeria .contenedor a {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #7fb3e4;
+    border-radius: 8px;
+    color: #fff;    
+}
+
+/* info2 */
+
+.last-section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.last-section img {
+    width: 500px;
+    height: 500px;
+    text-align: left;
+}
+
+.last-section .contenedor-textos-main {
+    width: 48%;
+}
+
+.parrafo {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* footer */
+
+footer {
+    background: #388EDA;
+    color: #fff;
+}
+
+footer .content p {
+    width: 100%;
+    padding: 20px 15px;
+}
